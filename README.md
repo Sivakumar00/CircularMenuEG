@@ -7,13 +7,19 @@ It is an example of circular menu in android
 (I haven't include the build.gradle (project) file in repository).
 
 ```
-maven{
-      url "https://jitpack.io"
-      }
+allprojects {
+    repositories {
+        ...
+        jcenter()
+        maven{ url "https://jitpack.io"}
+    }
+}
 ```
 
 2) Add App level dependencies:
 
 ```
+dependencies {
   compile 'com.github.Hitomis:CircleMenu:v1.1.0'
+  }
 ```
